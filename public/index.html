@@ -1,0 +1,134 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeLockr</title>
+    <link rel="icon" type="images" href="https://di-uploads-pod42.dealerinspire.com/largohonda/uploads/2022/05/LARGO-HONDA_LANDING-PAGE-ICON_Lock_300_05-22.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <section id="main-header">
+  <div class="header">
+    <div class="navigation">
+      <div class="nav-bar">
+      <div class="logo"><a href="#main-header"><img src="https://di-uploads-pod42.dealerinspire.com/largohonda/uploads/2022/05/LARGO-HONDA_LANDING-PAGE-ICON_Lock_300_05-22.png"> <span>C</span>ode <span>L</span>ockr</a></div>
+      <div class="nav-list">
+        <div class="hamburger"><div class="bar"></div></div>
+        <ul class="list" >
+          <li><a href="#main-header" data-after="Home">Home</a></li>
+          <li><a href="#text-encryption" data-after="Text Encryption & Decryption">Text Encryption & Decryption</a></li>
+          <li><a href="#image-encryption" data-after="File Encryption & Decryption">File Encryption & Decryption</a></li> 
+        </ul>
+      </div>
+      </div>
+    </div>
+  </div>
+  </section>
+    <!--hero section-->
+   <div class="hero">
+    <div class="container">
+        <div>
+            <h1> "Encrypting <span></span></h1>
+            <h1>  today for a <span></span></h1>
+            <h1>  secure tomorrow."<span></span></h1>
+        </div>
+    </div>
+
+</div>
+<section id="text-encryption">
+    <h1> Text Encryption & Decryption </h1>
+    <div class="text-encryption-contain">
+        Text encryption is the process of converting plaintext into ciphertext using an algorithm and a key, 
+        while decryption is the reverse process of converting ciphertext back to plaintext using the same algorithm and key.
+    </div>
+    <div class="text-boxes">
+        <div class="encryption-box">
+          <h2> Text encryption </h2>
+          <label for="text-encrypt">Enter any text to be Encrypted</label>
+          <textarea cols="50"  rows="5" placeholder="Enter any text to be Encrypted" id="text-encrypt" class="text-encrypt"></textarea>
+          <label for="key">Enter Key:</label>
+        <input type="password" id="key" class="key" placeholder="enter the secret key">
+          <button class="encrypt-button" onclick="encrypt()" > Encrypt</button>
+          <label for="encrypt-result">Encrypted output:</label>
+          <textarea cols="50"  rows="3" placeholder="Result goes here" id="encrypt-result" class="encrypt-result" readonly></textarea>
+           <button class="reset" onclick="reset_encryption()">RESET</button>
+          
+        </div>
+        <div class="decryption-box">
+          <h2>Text decryption</h2>
+          <label for="text-decrypt">Enter encrypted text to Decrypt</label>
+          <textarea cols="50" rows="5" placeholder="Enter text to be decrypted" id="text-decrypt" class="text-decrypt"></textarea>
+          <label for="key1">Enter Key:</label>
+        <input type="password" id="key1" class="key1" placeholder="enter the correct secret key">
+          <button class="decrypt-button" onclick="decrypt()"> Decrypt</button>
+          <label for="decrypt-result">Decrypted output:</label>
+          <textarea cols="50"  rows="3" placeholder="Decrypted text" id="decrypt-result" class="decrypt-result" readonly></textarea>
+          <button class="reset2" onclick="reset_decryption()" >RESET</button>
+        </div>
+
+    </div>
+    
+
+</section>
+
+<section id="image-encryption">
+  <div class="image-encryption-heading">
+      <h1>File Encryption & Decryption</h1>
+      <p> <span class="text-design"> File can be Image,Pdf,text file,Media Files,System Files,Executable Files . </span>.File encryption is the process of converting an file into a coded format to protect its content, 
+        and decryption is the reverse process of converting the coded file back to its original form for viewing 
+        or further analysis</p>
+        <div class="uploadimg">
+          <label for="input-file" id="drop-area">
+            <input type="file" accept="image/*" id="input-file" hidden required>
+            <div id="img-view">
+                 <img src="https://th.bing.com/th/id/R.763ac784face5729e9a5274627676d3e?rik=V9UoqLQpq7HLKw&riu=http%3a%2f%2fwww.pngall.com%2fwp-content%2fuploads%2f2%2fUpload-PNG.png&ehk=p9OH7uKYdCDqtmw7B%2f3GbgBjKdDyCUCllqAD6Q5nCxU%3d&risl=&pid=ImgRaw&r=0">
+                 <p> Click here to upload image </p>
+                 <span>Upload any images from desktop </span>
+            </div>
+          </label>
+          
+  </div>
+  <div class="copy-path">
+    <label for="image-path"></label>
+    <input type="text" placeholder="  Enter the path of the uploaded image" id="image-path">
+    <label for="keyimage"></label>
+    <input type="password" placeholder="  Enter the key(do not forget key )" id="keyimage">
+  </div>
+      <div class="buttons">
+        <button class="img-encrypt" onclick="encryptImage()">Encrypt</button>
+        <button class="img-decrypt" onclick="decryptImage()">Decrypt</button>
+      </div>
+      <span id="result"></span>
+
+  </div>
+  
+</section>
+<section id="footer">
+<div class="footercontainer">
+  <div class="brand">
+    <h1><a href="#main-header"><img src="https://di-uploads-pod42.dealerinspire.com/largohonda/uploads/2022/05/LARGO-HONDA_LANDING-PAGE-ICON_Lock_300_05-22.png"> <span>C</span>ode <span>L</span>ockr</a></h1>
+    <h2>Encryption & decryption web solution</h2>
+    <div class="social_icon">
+    <div class="social_item">
+    <a href="https://www.facebook.com/arpit.rai.7982"><img src="https://th.bing.com/th/id/R.2bad70f2d08429a28dfbebd4c237924b?rik=vgEdhJ%2f%2biiEnQQ&riu=http%3a%2f%2fpngimg.com%2fuploads%2ffacebook_logos%2ffacebook_logos_PNG19748.png&ehk=0ZiZ04ZZ6mSJ5oyPxBh1gy4FSYhegWTWyDpCiI73sbw%3d&risl=&pid=ImgRaw&r=0"></a>
+      
+    </div>
+    <div class="social_item">
+    <a href="https://www.instagram.com/arpitrai83?igsh=MXVqeWU2Y2F3OWh3ag=="><img src="https://th.bing.com/th/id/R.26d9974a1feec9905a4e0d5e5ddf8db6?rik=Og1ujXM2C1AJHQ&riu=http%3a%2f%2fupload.wikimedia.org%2fwikipedia%2fcommons%2fa%2fa5%2fInstagram_icon.png&ehk=1%2fZWXYn2nN%2fR80TOtcKH5SsdLkkUvMLrB%2fHUXRDHk9I%3d&risl=&pid=ImgRaw&r=0"></a>
+      
+    </div>
+    <div class="social_item">
+    <a href="https://www.linkedin.com/in/arpit-rai-2591241b9"><img src="https://www.keesingtechnologies.com/wp-content/uploads/2018/07/Linkedin-Icon.png"></a>
+      
+    </div>
+    </div>
+    
+  </div>
+  <div class="copyright">Copyright @ 2024 CodeLokr.All rights reserved</div>
+</div>
+</section>
+<script src="javascript/script.js"></script>
+  
+</body>
+</html>
